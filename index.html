@@ -1,92 +1,51 @@
-/* 기본 스타일 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹 페이지 레이아웃</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-body {
-  font-family: Arial, sans-serif;
-}
+  <!-- 상단 네비게이션 메뉴 -->
+  <header>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="#">홈</a></li>
+        <li><a href="#">서비스</a></li>
+        <li><a href="#">프로젝트</a></li>
+        <li><a href="#">연락처</a></li>
+      </ul>
+    </nav>
+  </header>
 
-/* 상단 네비게이션 스타일 */
-.top-nav {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-}
+  <div class="container">
+    <!-- 좌측 네비게이션 메뉴 -->
+    <aside class="left-nav">
+      <ul>
+        <li><a href="#">대시보드</a>
+          <ul>
+            <li><a href="#">대시보드 1</a></li>
+            <li><a href="#">대시보드 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">설정</a>
+          <ul>
+            <li><a href="#">일반 설정</a></li>
+            <li><a href="#">보안 설정</a></li>
+          </ul>
+        </li>
+        <li><a href="#">사용자 관리</a></li>
+      </ul>
+    </aside>
 
-.top-nav ul {
-  list-style-type: none;
-  text-align: center;
-}
+    <!-- 센터 내용 -->
+    <main class="content">
+      <h1>센터 내용</h1>
+      <p>여기에는 콘텐츠가 표시됩니다.</p>
+    </main>
+  </div>
 
-.top-nav ul li {
-  display: inline-block;
-  margin: 0 20px;
-}
-
-.top-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
-}
-
-.top-nav ul li a:hover {
-  background-color: #555;
-  border-radius: 4px;
-}
-
-/* 전체 레이아웃 */
-.container {
-  display: flex;
-}
-
-/* 좌측 네비게이션 스타일 */
-.left-nav {
-  width: 250px;
-  background-color: #f4f4f4;
-  padding: 20px;
-  height: 100vh;
-}
-
-.left-nav ul {
-  list-style-type: none;
-}
-
-.left-nav ul li {
-  margin-bottom: 20px;
-}
-
-.left-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-.left-nav ul li a:hover {
-  color: #007BFF;
-}
-
-.left-nav ul li ul {
-  list-style-type: none;
-  padding-left: 20px;
-}
-
-.left-nav ul li ul li a {
-  font-weight: normal;
-}
-
-/* 센터 콘텐츠 스타일 */
-.content {
-  flex: 1;
-  padding: 20px;
-}
-
-.content h1 {
-  margin-bottom: 20px;
-}
-
-.content p {
-  font-size: 16px;
-}
+</body>
+</html>
